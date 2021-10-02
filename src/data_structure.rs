@@ -1,3 +1,4 @@
+pub mod is_anagram;
 pub mod is_valid;
 pub mod max_sliding_window;
 pub mod min_stack;
