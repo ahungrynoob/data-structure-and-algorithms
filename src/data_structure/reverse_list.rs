@@ -30,3 +30,26 @@ impl Solution {
         prev
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::{ListNode, Solution};
+    #[test]
+    fn it_works() {
+        let node = ListNode {
+            val: 1,
+            next: Some(Box::new(ListNode {
+                val: 2,
+                next: Some(Box::new(ListNode {
+                    val: 3,
+                    next: Some(Box::new(ListNode {
+                        val: 4,
+                        next: Some(Box::new(ListNode::new(5))),
+                    })),
+                })),
+            })),
+        };
+        let reversed_node = Solution::reverse_list(Some(Box::new(node)));
+        assert_eq!(reversed_node.unwrap().val, 5);
+    }
+}
