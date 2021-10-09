@@ -2,6 +2,7 @@ pub mod group_anagrams;
 pub mod is_anagram;
 pub mod is_valid;
 pub mod max_sliding_window;
+pub mod middle_node;
 pub mod min_stack;
 pub mod move_zeroes;
 pub mod plus_one;

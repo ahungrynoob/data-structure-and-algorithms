@@ -36,20 +36,51 @@ mod tests {
     use super::{ListNode, Solution};
     #[test]
     fn it_works() {
-        let node = ListNode {
-            val: 1,
-            next: Some(Box::new(ListNode {
-                val: 2,
-                next: Some(Box::new(ListNode {
-                    val: 3,
-                    next: Some(Box::new(ListNode {
-                        val: 4,
-                        next: Some(Box::new(ListNode::new(5))),
-                    })),
-                })),
-            })),
-        };
-        let reversed_node = Solution::reverse_list(Some(Box::new(node)));
-        assert_eq!(reversed_node.unwrap().val, 5);
+        let mut node1 = ListNode::new(1);
+        let mut node2 = ListNode::new(2);
+        let mut node3 = ListNode::new(3);
+        let mut node4 = ListNode::new(4);
+        let node5 = ListNode::new(5);
+
+        node4.next = Some(Box::new(node5));
+        node3.next = Some(Box::new(node4));
+        node2.next = Some(Box::new(node3));
+        node1.next = Some(Box::new(node2));
+
+        let reversed_node = Solution::reverse_list(Some(Box::new(node1)));
+        assert_eq!(reversed_node.as_ref().unwrap().val, 5);
+        assert_eq!(
+            reversed_node.as_ref().unwrap().next.as_ref().unwrap().val,
+            4
+        );
+        assert_eq!(
+            reversed_node
+                .as_ref()
+                .unwrap()
+                .next
+                .as_ref()
+                .unwrap()
+                .next
+                .as_ref()
+                .unwrap()
+                .val,
+            3
+        );
+        assert_eq!(
+            reversed_node
+                .as_ref()
+                .unwrap()
+                .next
+                .as_ref()
+                .unwrap()
+                .next
+                .as_ref()
+                .unwrap()
+                .next
+                .as_ref()
+                .unwrap()
+                .val,
+            2
+        );
     }
 }
