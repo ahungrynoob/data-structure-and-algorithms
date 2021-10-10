@@ -2,6 +2,7 @@ pub mod group_anagrams;
 pub mod inorder_traversal;
 pub mod is_anagram;
 pub mod is_valid;
+pub mod level_order;
 pub mod max_sliding_window;
 pub mod merge_two_lists;
 pub mod middle_node;
