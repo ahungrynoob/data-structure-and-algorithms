@@ -1,5 +1,6 @@
 pub mod group_anagrams;
 pub mod inorder_traversal;
+pub mod insert_into_bst;
 pub mod is_anagram;
 pub mod is_valid;
 pub mod level_order;
