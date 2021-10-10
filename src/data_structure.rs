@@ -8,6 +8,7 @@ pub mod middle_node;
 pub mod min_stack;
 pub mod move_zeroes;
 pub mod plus_one;
+pub mod postorder_traversal;
 pub mod preorder_traversal;
 pub mod remove_duplicates;
 pub mod remove_nth_from_end;
