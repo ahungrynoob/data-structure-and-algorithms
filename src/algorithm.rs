@@ -7,5 +7,6 @@ pub mod max_depth;
 pub mod min_depth;
 pub mod my_pow;
 pub mod search;
+pub mod search_bst;
 pub mod solve_n_queens;
 pub mod subsets;
