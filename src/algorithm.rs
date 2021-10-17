@@ -1,5 +1,6 @@
 pub mod climb_stairs;
 pub mod combine;
+pub mod find_kth_largest;
 pub mod find_min;
 pub mod generate_parenthesis;
 pub mod is_perfect_square;
