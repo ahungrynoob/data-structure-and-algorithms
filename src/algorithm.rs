@@ -5,6 +5,7 @@ pub mod find_min;
 pub mod generate_parenthesis;
 pub mod is_perfect_square;
 pub mod max_depth;
+pub mod merge;
 pub mod min_depth;
 pub mod my_pow;
 pub mod search;
