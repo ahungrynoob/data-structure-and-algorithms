@@ -8,6 +8,7 @@ pub mod max_depth;
 pub mod merge;
 pub mod min_depth;
 pub mod my_pow;
+pub mod reverse_pairs;
 pub mod search;
 pub mod search_bst;
 pub mod solve_n_queens;
