@@ -1,4 +1,5 @@
 pub mod climb_stairs;
+pub mod climb_stairs_dp;
 pub mod combine;
 pub mod find_kth_largest;
 pub mod find_min;
