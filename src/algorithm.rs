@@ -9,6 +9,7 @@ pub mod max_depth;
 pub mod merge;
 pub mod min_depth;
 pub mod min_path_sum;
+pub mod minimum_total;
 pub mod my_pow;
 pub mod reverse_pairs;
 pub mod search;
