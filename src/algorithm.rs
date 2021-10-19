@@ -16,3 +16,4 @@ pub mod search;
 pub mod search_bst;
 pub mod solve_n_queens;
 pub mod subsets;
+pub mod coin_change;
